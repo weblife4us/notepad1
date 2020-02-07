@@ -7,7 +7,5 @@ public class Test {
         Collector collector = new Collector();
         collector.toString();
 
-
-
     }
 }
