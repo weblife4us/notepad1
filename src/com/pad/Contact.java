@@ -2,7 +2,7 @@ package com.pad;
 
 public class Contact {
     private String phone;
-//    -----------------------------------------------
+    //    -----------------------------------------------
     private Person person;
 
     public Contact() {
