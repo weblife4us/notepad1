@@ -3,6 +3,7 @@ package com.pad;
 public class Address {
     String build_number;
     String street;
+    String postcode;
 
     public String getBuild_number() {
         return build_number;
@@ -27,6 +28,4 @@ public class Address {
     public void setPostcode(String postcode) {
         this.postcode = postcode;
     }
-
-    String postcode;
 }
