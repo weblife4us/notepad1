@@ -1,19 +1,21 @@
 package com.pad;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Test {
     public static void main(String[] args) {
 
-        Collector collector = new Collector();
+//        Collector collector = new Collector();
 
         Contact contact = new Contact();
         NoteBook note = new NoteBook();
         Person person = new Person();
 
-        collector.setPhone("1234567890");
-        collector.setName(" Ivan ");
-        collector.setSurname(" Petrov ");
+//        collector.setPhone("1234567890");
+//        collector.setName(" Ivan ");
+//        collector.setSurname(" Petrov ");
 
         System.out.println(person);
         person.setName("Bob");
@@ -26,14 +28,19 @@ public class Test {
         contact.setPerson(person);
         System.out.println(" ------------------------- contact -------------------     ");
         System.out.println(contact);
-        note.setCurrentContact(contact);
+
+        List<Contact> contactList = new ArrayList<>();
+        contactList.add(contact);
+
+        note.setContactList(contactList);
+
         System.out.println(" ------------------------- note -------------------     ");
 
-        note.getCurrentContact().getPerson().setName("new Name");
-        note.getCurrentContact().getPerson().getName();
+//        note.getContactList().getPerson().setName("new Name");
+//        note.getContactList().getPerson().getName();
         System.out.println(note);
         System.out.println(" ------------------------- collector -------------------     ");
-        System.out.println(collector);
+//        System.out.println(collector);
 
 
     }
